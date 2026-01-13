@@ -8,7 +8,8 @@
             int numRolls = int.Parse(Console.ReadLine());
             DiceRollerClass diceRoller = new DiceRollerClass();
             int[] results = diceRoller.RollDice(numRolls);
-
+            Console.WriteLine("DICE ROLLING SIMULATION RESULTS");
+            Console.WriteLine("Each * represents 1% of the total number of rolls.");
             for (int i = 2; i < results.Length; i++)
             {
                 double resultPercentNum = results[i] / (double)numRolls * 100;
